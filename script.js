@@ -44,3 +44,15 @@ const submitBtn = document.getElementById("submit");
 
 let currentQuiz = 0;
 let score = 0;
+
+function getSelected() {
+  let answer;
+
+  answerEls.forEach(answerEl => {
+    if (answerEl.checked) {
+      answer = answerEl.id;
+    }
+  });
+
+  return answer;
+}
